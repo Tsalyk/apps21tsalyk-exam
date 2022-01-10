@@ -21,7 +21,8 @@ public class JSONApp {
         final int FIRST_MARK = 3;
         final int SECOND_MARK = 4;
 
-        Json jMarks = new JsonArray(new JsonNumber(FIRST_MARK), new JsonNumber(SECOND_MARK));
+        Json jMarks = new JsonArray(new JsonNumber(FIRST_MARK),
+                                    new JsonNumber(SECOND_MARK));
         print(jMarks); // [3, 4]
 
         JsonPair name = new JsonPair("name", new JsonString("Andrii"));
@@ -84,13 +85,5 @@ public class JSONApp {
         jsonObject.add(new JsonPair("exams", new JsonArray(data)));
 
         return jsonObject;
-    }
-}
-
-class Main {
-    public static void main(String[] args) {
-        Json jsonObject = JSONApp.sessionResult();
-
-        System.out.println(jsonObject.toJson());
     }
 }
