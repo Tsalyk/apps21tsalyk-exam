@@ -7,12 +7,15 @@ import json.*;
  */
 
 public class Student extends BasicStudent {
-    protected String name;
-    protected String surname;
-    protected Integer year;
-    protected Tuple<String, Integer>[] exams;
+    private String name;
+    private String surname;
+    private Integer year;
+    private Tuple<String, Integer>[] exams;
 
-    public Student(String name, String surname, Integer year, Tuple<String, Integer>... exams) {
+    public Student(String name,
+                   String surname,
+                   Integer year,
+                   Tuple<String, Integer>... exams) {
         this.name = name;
         this.surname = surname;
         this.year = year;

@@ -7,9 +7,9 @@ import json.*;
  */
 public class BasicStudent implements Jsonable {
 
-    protected String name;
-    protected String surname;
-    protected Integer year;
+    private String name;
+    private String surname;
+    private Integer year;
 
     public BasicStudent() {
     }

@@ -8,8 +8,8 @@ import lombok.Getter;
 
 @Getter
 public class Tuple<K, V> {
-    public final K key;
-    public final V value;
+    private K key;
+    private V value;
 
     public Tuple(K key, V value) {
         this.key = key;

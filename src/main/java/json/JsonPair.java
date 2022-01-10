@@ -13,7 +13,7 @@ public class JsonPair extends Tuple<String, Json> {
 
     @Override
     public String toString() {
-        return "'" + key + "': " + value.toJson();
+        return "'" + this.getKey() + "': " + this.getValue().toJson();
     }
 
     public JsonPair factory(String name, Json value) {
